@@ -28,13 +28,13 @@ import {
 } from "@/components/ui/sidebar";
 import Logo from "./ui/logo";
 import avatar from "@/avatar.png";
-import { Separator } from "@radix-ui/react-separator";
 
 const data = {
   user: {
     name: "Sohel Mia",
     email: "sohelmiacse99@gmail.com",
     avatar: avatar,
+    site: "gotipath kms",
   },
   navMain: [
     {
@@ -114,7 +114,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   >
                     <Logo />
 
-                    <div className=" font-bold uppercase">gotipath kms</div>
+                    <div className=" font-bold uppercase">{data.user.site}</div>
                   </div>
                   <div className="flex justify-center items-center">
                     <SidebarTrigger className="" />
